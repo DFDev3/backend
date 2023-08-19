@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <h1>Digite la siguiente info: <br></h1>
-    <form action="" method="get">
-        Nombre:<input type="text" name="nombre"/>
+    <form action="metodo_post_copy.php" method="post">
+    Nombre:<input type="text" name="nombre"/>
         <br>
         Fecha: <input type="date" name="fecha"/>
         <br>
@@ -17,9 +16,9 @@
     </form>
     <h2>La informacion enviada es: </h2>
     <?php
-        print_r($_GET);
+        print_r($_POST);
     ?>
-
-
+    </form>
+    
 </body>
 </html>
